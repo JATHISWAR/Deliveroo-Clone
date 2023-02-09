@@ -4,7 +4,8 @@ import { LinearGradient } from 'react-native-svg';
 
 const CategoryCard = ({imgUrl,title}) => {
   return (
-    <TouchableOpacity className="relative mr-2 h-60 w-40">
+    <TouchableOpacity 
+    className="relative mr-2 h-60 w-40">
     <Image
       source={{
         uri: imgUrl,
@@ -13,7 +14,7 @@ const CategoryCard = ({imgUrl,title}) => {
       >
         </Image>
       
-    <Text className="absolute bottom-1 left-1 text-white font-bold text-2xl bg-black items-center p-1">
+    <Text className="absolute bottom-1 left-1 text-white font-bold text-2xl bg-black">
       {title}
     </Text>
    

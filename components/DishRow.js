@@ -30,7 +30,7 @@ export default function DishRow({ id, name, description, price, image }) {
 
   return (
     <>
-      {/* <TouchableOpacity
+      <TouchableOpacity
         onPress={() => setIsPress(!isPressed)}
         className={`bg-white border p-4 border-gray-200 ${
           isPressed && "border-b-0"
@@ -40,8 +40,8 @@ export default function DishRow({ id, name, description, price, image }) {
           <View className="flex-1 pr-2">
             <Text className="text-lg mb-1">{name}</Text>
             <Text className="text-gray-400">{description} </Text>
-            <Text className="text-gray-400 mt-2">
-              <Currency quantity={price} currency="USD" />
+            <Text className="text-gray-900 mt-5 font-semibold">
+              <Text>Rs.{price}</Text>
             </Text>
           </View>
           <View>
@@ -76,7 +76,7 @@ export default function DishRow({ id, name, description, price, image }) {
             </TouchableOpacity>
           </View>
         </View>
-      )} */}
+      )}
     </>
   );
 }

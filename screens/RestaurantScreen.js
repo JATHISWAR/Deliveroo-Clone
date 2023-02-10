@@ -4,11 +4,11 @@ import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import {
   ArrowLeftIcon,
   ChevronRightIcon,
-  LocationMarkerIcon,
+  MapPinIcon,
   QuestionMarkCircleIcon,
   StarIcon,
 } from "react-native-heroicons/solid";
-import { useDispatch } from "react-redux/es/exports";
+import { useDispatch } from "react-redux";
 
 import BasketIcon from "../components/BasketIcon";
 import DishRow from "../components/DishRow";
@@ -85,7 +85,7 @@ export default function RestaurantScreen() {
                   </Text>
                 </View>
                 <View className="flex-row item-center space-x-1">
-                  <LocationMarkerIcon color="gray" opacity={0.4} size={22} />
+                  <MapPinIcon color="gray" opacity={0.4} size={22} />
                   <Text className="text-xs text-gray-500">
                     <Text className="text-xs text-gray-500">
                       Nearby . {address}
@@ -120,6 +120,7 @@ export default function RestaurantScreen() {
             />
           ))}
         </View>
+ 
       </ScrollView>
     </>
   );

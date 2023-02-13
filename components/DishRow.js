@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Currency from "react-currency-format";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { MinusCircleIcon, PlusCircleIcon } from "react-native-heroicons/solid";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 
 import {
   addToBasket,
@@ -40,8 +39,8 @@ export default function DishRow({ id, name, description, price, image }) {
           <View className="flex-1 pr-2">
             <Text className="text-lg mb-1">{name}</Text>
             <Text className="text-gray-400">{description} </Text>
-            <Text className="text-gray-900 mt-5 font-semibold">
-              <Text>Rs.{price}</Text>
+            <Text className="text-gray-500 mt-5">
+              <Text>₹{price}</Text>
             </Text>
           </View>
           <View>

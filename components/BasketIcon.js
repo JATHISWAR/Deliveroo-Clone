@@ -1,6 +1,5 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import Currency from "react-currency-format";
 import { Text, TouchableOpacity, View } from "react-native";
 import { useSelector } from "react-redux";
 
@@ -24,11 +23,11 @@ export default function BasketIcon() {
         <Text className="text-white font-extrabold text-lg bg-[#01A296] py-1 px-2">
           {items.length}
         </Text>
-        <Text className="flex-1 text-white font-extrabold text-lg text-center">
+        <Text className="flex-1 text-white font-extrabold text-lg text-center mt-1">
           View Basket
         </Text>
-        <Text className="text-ld text-white font-extrabold">
-          <Currency quantity={basketTotal} currency="INR" />
+        <Text className="text-ld text-white font-extrabold mt-2">
+          <Text>₹{basketTotal}</Text>
         </Text>
       </TouchableOpacity>
     </View>

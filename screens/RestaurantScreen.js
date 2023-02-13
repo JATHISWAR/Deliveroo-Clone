@@ -72,21 +72,21 @@ export default function RestaurantScreen() {
             onPress={navigation.goBack}
             className="absolute top-14 left-5 p-2 bg-gray-100 rounded-full"
           >
-            <ArrowLeftIcon height={20} width={20} color="#00CCBB" />
+            <ArrowLeftIcon height={20} width={20} color="#cb202d" />
           </TouchableOpacity>
           <View className="bg-white">
             <View className="px-4 pt-4">
               <Text className="text-3xl font-bold">{title}</Text>
               <View className="flex-row space-x-2 my-1">
                 <View className="flex-row item-center space-x-1">
-                  <StarIcon color="green" opacity={0.5} size={22} />
-                  <Text className="text-xs text-gray-500">
-                    <Text className="text-green-500">{rating}</Text> . {genre}
+                  <StarIcon color="#c20518" opacity={0.5} size={22} />
+                  <Text className="text-xs text-gray-500 mt-1">
+                    <Text className="text-#6b1b1b-500">{rating}</Text> . {genre}
                   </Text>
                 </View>
                 <View className="flex-row item-center space-x-1">
                   <MapPinIcon color="gray" opacity={0.4} size={22} />
-                  <Text className="text-xs text-gray-500">
+                  <Text className="text-xs text-gray-500 mt-0.5">
                     <Text className="text-xs text-gray-500">
                       Nearby . {address}
                     </Text>

@@ -49,10 +49,10 @@ const RestaurantCard = ({
     />
       <View className="ml-2 mb-5">
         <Text className="font-bold text-lg pt-2">{title}</Text>
-        <View className="flex-row items-center space-x-2">
-          <StarIcon color="green" opacity={0.5} size={22} />
+        <View className="flex-row items-center space-x-2 ">
+          <StarIcon color="#cb202d" opacity={0.5} size={22} />
           <Text>
-            <Text className="text-green-500">{rating}</Text> . {genre}
+            <Text className="text-#cb202d">{rating}</Text> . {genre}
           </Text>
         </View>
 

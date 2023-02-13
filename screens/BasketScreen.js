@@ -39,7 +39,7 @@ export default function BasketScreen() {
   return (
     <SafeAreaView className="flex-1 bg-white">
       <View className="flex-1 bg-gray-100">
-        <View className="p-5 border-b border-[#00CCBB] bg-white shadow-xs">
+        <View className="p-5 border-b border-[#cb202d] bg-white shadow-xs">
           <View>
             <Text className="text-lg font-bold text-center">Basket</Text>
             <Text className="text-center text-gray-400">
@@ -50,7 +50,7 @@ export default function BasketScreen() {
             onPress={navigation.goBack}
             className="rounded-full bg-gray-100 absolute top-3 right-5"
           >
-            <XCircleIcon color="#00CCBB" height={50} width={50} />
+            <XCircleIcon color="#cb202d" height={50} width={50} />
           </TouchableOpacity>
         </View>
         <View className="flex-row items-center space-x-4 px-4 py-3 bg-white my-5">
@@ -62,7 +62,7 @@ export default function BasketScreen() {
           />
           <Text className="flex-1">Deliver in 50-70 min</Text>
           <TouchableOpacity>
-            <Text className="text-[#00CCBB]">Change</Text>
+            <Text className="text-[#cb202d]">Change</Text>
           </TouchableOpacity>
         </View>
         <ScrollView className="divide-y divide-gray-200">
@@ -71,7 +71,7 @@ export default function BasketScreen() {
               key={key}
               className="flex-row items-center space-x-3 bg-white py-2 px-5"
             >
-              <Text className="text-[#00CCBB]">{items.length} x</Text>
+              <Text className="text-[#cb202d">{items.length} x</Text>
               <Image
                 source={{ uri: urlFor(items[0]?.image).url() }}
                 className="h-12 w-12 rounded-full"
@@ -82,7 +82,7 @@ export default function BasketScreen() {
               </Text>
               <TouchableOpacity>
                 <Text
-                  className="text-[#00CCBB] text-xs"
+                  className="text-[#cb202d] text-xs"
                   onPress={() => dispatch(removeFromBasket({ id: key }))}
                 >
                   Remove
@@ -112,7 +112,7 @@ export default function BasketScreen() {
           </View>
           <TouchableOpacity
             onPress={() => navigation.navigate("PreparingOrderScreen")}
-            className="rounded-lg bg-[#00CCBB] p-4"
+            className="rounded-lg bg-[#cb202d] p-4"
           >
             <Text className="text-center text-white text-lg font-bold">
               Place Order

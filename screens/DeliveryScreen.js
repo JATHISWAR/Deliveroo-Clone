@@ -20,7 +20,7 @@ export default function DeliveryScreen() {
   //console.log(restaurant.long);
 
   return (
-    <View className="bg-[#00CCBB] flex-1">
+    <View className="bg-[#cb202d] flex-1">
       <SafeAreaView className="z-50">
         <View className="flex-row justify-between items-center p-5">
           <TouchableOpacity onPress={() => navigation.navigate("Home")}>
@@ -42,7 +42,7 @@ export default function DeliveryScreen() {
               className="h-20 w-20"
             />
           </View>
-          <Progress.Bar size={30} color="#00CCBB" indeterminate={true} />
+          <Progress.Bar size={30} color="#cb202d" indeterminate={true} />
         </View>
       </SafeAreaView>
       <MapView
@@ -63,10 +63,10 @@ export default function DeliveryScreen() {
           title={restaurant.title}
           description={restaurant.short_description}
           identifier="origin"
-          pinColor="#00CCBB"
+          pinColor="#cb202d"
         />
       </MapView>
-      <SafeAreaView className="bg-white flex-row items-center space-x-5 h-40">
+      <SafeAreaView className="bg-white flex-row items-center space-x-5 h-35">
         <Image
           source={{
             uri: "https://pbs.twimg.com/media/EGIeHV4WoAA_qE6.jpg",
@@ -77,7 +77,7 @@ export default function DeliveryScreen() {
           <Text className="text-lg">Sashen Hasindu</Text>
           <Text className="text-gray-400">Your Rider</Text>
         </View>
-        <Text className="text-[#00CCBB] text-lg mr mr-8">Call</Text>
+        <Text className="text-[#cb202d] text-lg mr mr-8">Call</Text>
       </SafeAreaView>
     </View>
   );

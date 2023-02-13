@@ -65,13 +65,13 @@ export default function DishRow({ id, name, description, price, image }) {
               onPress={removeItemFromBasket}
             >
               <MinusCircleIcon
-                color={items.length > 0 ? "#00CCBB" : "gray"}
+                color={items.length > 0 ? "#cb202d" : "gray"}
                 size={40}
               />
             </TouchableOpacity>
             <Text>{items.length}</Text>
             <TouchableOpacity onPress={addItemToBasket}>
-              <PlusCircleIcon color="#00CCBB" size={40} />
+              <PlusCircleIcon color="#cb202d" size={40} />
             </TouchableOpacity>
           </View>
         </View>

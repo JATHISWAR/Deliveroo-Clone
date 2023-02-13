@@ -9,7 +9,7 @@ export default function PreparingOrderScreen() {
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate("Delivery");
+      navigation.navigate("DeliveryScreen");
     }, 4000);
   }, []);
 
@@ -24,7 +24,7 @@ export default function PreparingOrderScreen() {
       <Animatable.Text
         animation="slideInUp"
         iterationCount={1}
-        className="text-lg my-10 text-white font-bold text-center"
+        className="text-m my-10  text-white font-bold text-center"
       >
         Waiting for Restaurant to accept your order!
       </Animatable.Text>
